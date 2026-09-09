@@ -35,20 +35,20 @@ namespace Reservation.Controllers
         }
 
 
-        //[HttpPost]
+        [HttpPost]
 
-        //public IActionResutt CreateReservation(ReservationDto dto)
-        //// Map dto to entity
-        //var entity = new Reservation();
-        //entity.ld = e;
-        //entity.CustomerName = CustonerNane;
-        //entity.RoomNumber = dto.RoomNunber;
-        //entity.ChecklnDate= dto.ChecklnDate ;
-        //entity.CheckOutDate= dto.CheckOutDate;
-        ////Add to table
-        //dbContext.Reservation.Add(entity) ;
-        //dbContext.SaveChanges( ) ;
-        //return Ok();
+        public IActionResutt CreateReservation(ReservationDto dto)
+        // Map dto to entity
+        var entity = new Reservation();
+        entity.ld = e;
+        entity.CustomerName = CustonerNane;
+        entity.RoomNumber = dto.RoomNunber;
+        entity.ChecklnDate= dto.ChecklnDate ;
+        entity.CheckOutDate= dto.CheckOutDate;
+        //Add to table
+        dbContext.Reservation.Add(entity) ;
+        dbContext.SaveChanges( ) ;
+        return Ok();
     }
 
 }
